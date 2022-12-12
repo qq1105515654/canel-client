@@ -1,0 +1,18 @@
+server:
+  port: 8579
+spring:
+  application:
+    name: canal-clinet-service
+  redis:
+    host: 192.168.0.200
+    port: 16379
+    password:
+    database: 7
+    lettuce:
+      pool:
+        min-idle: 50
+        max-idle: 100
+        max-wait: 5s
+        max-active: 200
+    timeout: 60s
+
